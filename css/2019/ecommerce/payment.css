@@ -1,0 +1,77 @@
+﻿.card {
+    margin-bottom: 5px;
+}
+
+    .card.creditcard {
+        border: 1px solid rgba(32, 201, 151, 0.5);
+    }
+
+    .card.installment {
+        border: 1px solid rgba(32, 201, 151, 0.5);
+    }
+
+
+    .card.alipay {
+        border: 1px solid rgba(32, 201, 151, 0.5);
+    }
+
+    .card.truewallet {
+        border: 1px solid rgba(32, 201, 151, 0.5);
+    }
+
+.card-header.creditcard {
+    background: #6ecbb8;
+    color: #fff;
+}
+
+.card-header.installment {
+    background: #6ecbb8;
+    color: #fff;
+}
+
+.card-header.alipay {
+    background: #6ecbb8;
+    color: #fff;
+}
+
+.card-header.truewallet {
+    background: #6ecbb8;
+    color: #fff;
+}
+
+button#btnAliPay {
+    background: #00a0e9;
+    border-color: #00a0e9;
+}
+
+button#btnTrueWallet {
+    background: #f5831f;
+    border-color: #f5831f;
+}
+
+.installmentDiv {
+    text-align: center;
+    background: #0bb288;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+    .installmentDiv a:hover {
+        text-decoration: none;
+    }
+
+.installment1st {
+    color: #fff;
+}
+
+.installment2nd {
+    color: #fff;
+}
+
+.installmentDiv a {
+    color: #fff;
+}

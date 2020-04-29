@@ -1,0 +1,74 @@
+.currency_select select {
+  border: 1px solid #a1a1a1;
+  display: inline-block;
+    font-weight: 400;
+    color: #646569;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.4;
+    border-radius: .25rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+.currency_select select {
+  width:255px;
+}
+
+.currency_select select {
+  width:70px;
+  font-family: Courier New;
+}
+
+.CheckoutButton {
+    min-width: 90px;
+}
+
+.add-to-cart-button {
+    margin-left: -15px;
+    background-color: #fff;
+    border-color: #60bfb3;
+    color: #0bb288;
+    min-width: 90px;
+}
+
+a.btn.btn-primary.w-100.my-3 {
+    background-color: transparent;
+    color: #0bb288;
+    border: none;
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   .CheckoutButton {
+    margin-left: 15px;
+   }
+  
+  .add-to-cart-button
+  {
+    margin-left:15px
+  }
+}
+
+@media only screen and (max-width: 320px) {
+   .CheckoutButton {
+    margin-left: -15px;
+   }
+  
+  .add-to-cart-button
+  {
+    margin-left:-10px
+  }
+}

@@ -1,0 +1,93 @@
+﻿
+/* CSS Document */
+
+.multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+    content: counter(stepNum);
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+    background-color: #ededed;
+}
+
+.multi-steps {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+    .multi-steps > li {
+        counter-increment: stepNum;
+        text-align: center;
+        display: table-cell;
+        position: relative;
+        color: #00665e;
+    }
+
+        .multi-steps > li:after {
+            content: '\f00c';
+            content: '\2713;';
+            content: '\10003';
+            content: '\10004';
+            content: counter(stepNum);
+            display: block;
+            margin: 20px auto 4px;
+            background-color: #13A99E;
+            width: 48px;
+            height: 48px;
+            line-height: 42px;
+            text-align: center;
+            font-weight: bold;
+            border-width: 4px;
+            border-style: solid;
+            border-color: #00665e;
+            border-radius: 50%;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .multi-steps > li:before {
+            content: '';
+            height: 4px;
+            width: 100%;
+            background-color: #00665e;
+            position: absolute;
+            top: 76px;
+            left: 50%;
+            z-index: -1;
+        }
+
+        .multi-steps > li:last-child:before {
+            display: none;
+        }
+
+        .multi-steps > li.is-active:after {
+            background-color: #fff;
+            border-color: #00665e;
+            color: #00665e !important;
+        }
+
+        .multi-steps > li.is-active ~ li:after {
+            background-color: #e8edee;
+            border-color: #D0DDDA;
+            color: #fff;
+        }
+
+    .multi-steps > li {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+/* CSS Document */
+
+@media (max-width: 992px) {
+
+    
+    .multi-steps li a, .multi-steps li span {
+        display: none;
+    }
+
+    .multi-steps > li:before {
+        top: 42px;
+    }
+}
